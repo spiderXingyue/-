@@ -6,23 +6,22 @@ body{
     line-height: 1.6;
     /* background-image: url(../img/pexels-pixmike-413195.jpg); */
     /* margin-top: 25px; */
-    /* background-image: url("../img/pexels-pixmike-413195.jpg"); */
 }
 
 
+.wrapper{
 
+}
 
 /* top strat */
 .top{
     width: 1440px;
     height: 500px;
-    display: block;
     margin: 0 auto;
     /* border: 5px solid red; */
     background-image: url(../img/bg1.png);
     width: 100%;
     height: 700px;
-    
     background-position: bottom,center;
 }
 .top img{
@@ -37,10 +36,15 @@ a img{
     margin-left: 250px;
 }
 
-a{
+.top a{
+    background-image: linear-gradient(0deg, #ADC4F0 50%, #ADC4F0 0%);
+    opacity: .8;
     text-decoration: none;
-    font-size: 24px;
-    color: red;
+    font-size: 28px;
+    color: white;
+    text-shadow: 8px 8px 5px black;
+    border-bottom: 3px solid orange;
+    
 }
 
 .top a:hover{
@@ -48,11 +52,11 @@ a{
 }
 .top li{
     margin-top: 50px;
-    margin-right: 15px;
+    margin-right: 25px;
     display: block;
     float: right;
-    background-color: white;
-    opacity: 0.8;
+    /* background-color: white; */
+    /* opacity: 0.8; */
 }
 /* top end */
 
@@ -68,7 +72,7 @@ ul{
     width: 1200px;
     height: 220px;
     border-radius: 20px;
-    background-image: url("../img/traces-gb840e54d2_640.jpg");
+    background-image: url("../img/traces-gb840e54d2_640.jpg");  
 }
 .main ul{
     margin: 0px auto;
@@ -109,7 +113,8 @@ ul{
     height: 50px;
 }
 .main li a button{
-    margin: 0 auto;
+    margin: 15px auto;
+    
 }
 /* main end */
 
@@ -140,8 +145,6 @@ ul{
     margin: 150px 50px;
     float: left;
 }
-
-
 
 .down li:nth-child(2) h2{
     float: right;
