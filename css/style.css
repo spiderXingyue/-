@@ -1,6 +1,8 @@
 @import url("reset.css");
 
 body{
+    width: 1440px;
+    margin: 0 auto;
     font-size: 16px;
     font-family: Arial;
     line-height: 1.6;
@@ -10,7 +12,8 @@ body{
 
 
 .wrapper{
-
+    /* width: 1440px; */
+    position: relative;
 }
 
 /* top strat */
@@ -19,31 +22,30 @@ body{
     height: 500px;
     margin: 0 auto;
     /* border: 5px solid red; */
-    background-image: url(../img/bg1.png);
+    background-image: url(../img/bg.png);
     width: 100%;
     height: 700px;
     background-position: bottom,center;
 }
 .top img{
-    padding-bottom: 5px;
-    border-bottom: 3px solid orange;
+    /* padding-bottom: 5px; */
+    /* border-bottom: 3px solid orange; */
 }
 
 a img{
     float: left;
     width: 150px;
     margin: 20px;
-    margin-left: 250px;
+    margin-left: 150px;
 }
 
 .top a{
-    background-image: linear-gradient(0deg, #ADC4F0 50%, #ADC4F0 0%);
-    opacity: .8;
+    /* opacity: .8; */
     text-decoration: none;
     font-size: 28px;
     color: white;
     text-shadow: 8px 8px 5px black;
-    border-bottom: 3px solid orange;
+    /* border-bottom: 3px solid orange; */
     
 }
 
@@ -52,7 +54,7 @@ a img{
 }
 .top li{
     margin-top: 50px;
-    margin-right: 25px;
+    margin-right: 55px;
     display: block;
     float: right;
     /* background-color: white; */
@@ -61,60 +63,48 @@ a img{
 /* top end */
 
 /* main strat */
-ul{
-    width: 1440px;
-}
-
-
 
 .main{
-    margin: 50px auto;
-    width: 1200px;
-    height: 220px;
-    border-radius: 20px;
-    background-image: url("../img/traces-gb840e54d2_640.jpg");  
+    position: fixed;
+    display: block;
+    background-image: linear-gradient( 90deg , white 0%, #ADC4F0 60%);
+    right: 0;
+    top: 35%;
+    z-index: 100;
+    
 }
 .main ul{
-    margin: 0px auto;
-    width: 1200px;
-    height: 200px;
+    width: 100px;
+    height: 330px;
 }
 
-.main li{
-    background-color: white;
-    margin: 0px auto;
-    width: 360px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 25px;
-    display: inline-flex;
-    align-content: center;
-    justify-content: center;
-    margin-top: 60px;
-    margin-left: 130px;
-    margin-right: 105px;
+.main ul li{
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding-bottom: 50px;
+    opacity: .8;
+}
+
+.main li h1{
+    font-size: 48px;
+    text-align: center;
+    color: red;
 }
 
 .main li h2{
     font-size: 24px;
-    margin: 0 auto;
     text-align: center;
 }
-.main li:last-child {
-    margin: 0 0 0 0;
-    margin-left: 545px;
-    width: 100px;
-    height: 50px;
-    /* margin-left: 545px; */
+.main li:nth-child(3){
+    text-align: center;
 }
 
 .main li:last-child a{
-    margin: 0 auto;
-    height: 50px;
+    text-align: center;
 }
-.main li a button{
-    margin: 15px auto;
-    
+.main li a button{ 
+    text-align: center;
 }
 /* main end */
 
@@ -126,7 +116,7 @@ ul{
 }
 
 .down li{
-    background-image: url("../img/traces-gb840e54d2_640.jpg");
+    background-color: #ADC4F0;
     height: 700px;
     height: 466px;
     margin-top: 70px;   
@@ -136,7 +126,18 @@ ul{
     width: 700px;
     float: right;
 }
+.down li img{
+    
+}
+
+
+
+/* .down img:nth-child(){
+    border-radius: 0 25px 25px 0 ;
+} */
+
 .down li h2{
+    /* color: black; */
     color: white;
     font-size: 24px;
     text-align: center;
@@ -176,4 +177,45 @@ ul{
 /* down end */
 
 /* foot start */
+.footer{
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    background-color: black; 
+}
 
+.footer img{
+    width: 150px;
+    margin: 20px;
+    margin-left: 30px;
+    float: left;
+}
+
+.footer nav {
+    
+}
+
+.footer li{
+    display: block;
+    float: right;
+    float: left;
+}
+
+.footer  a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer p{
+    color: white;
+    float: right;
+    float: left;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 25px;
+}
