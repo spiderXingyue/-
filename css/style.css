@@ -2,6 +2,7 @@
 
 body{
     width: 1440px;
+    height: 500px;
     margin: 0 auto;
     font-size: 16px;
     font-family: Arial;
@@ -54,9 +55,10 @@ a img{
 }
 .top li{
     margin-top: 50px;
-    margin-right: 55px;
+    margin-left: 55px;
     display: block;
     float: right;
+    float: left;
     /* background-color: white; */
     /* opacity: 0.8; */
 }
@@ -116,7 +118,7 @@ a img{
 }
 
 .down li{
-    background-color: #ADC4F0;
+    background-color: #eeeeee;
     height: 700px;
     height: 466px;
     margin-top: 70px;   
@@ -138,7 +140,7 @@ a img{
 
 .down li h2{
     /* color: black; */
-    color: white;
+    color: black;
     font-size: 24px;
     text-align: center;
 }
@@ -163,8 +165,8 @@ a img{
 }
 
 .down li:nth-child(3) h2{
-    padding-top: 30px ;
-    padding-bottom: 50px;
+    padding-top: 10px ;
+    padding-bottom: 0px;
     font-size: 30px;
     text-align: center;
 }
@@ -189,10 +191,6 @@ a img{
     margin: 20px;
     margin-left: 30px;
     float: left;
-}
-
-.footer nav {
-    
 }
 
 .footer li{

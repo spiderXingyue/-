@@ -1,0 +1,189 @@
+@import url("reset.css");
+
+body{
+    width: 1440px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Arial;
+    line-height: 1.6;
+    /* background-image: url(../img/pexels-pixmike-413195.jpg); */
+    /* margin-top: 25px; */
+}
+
+
+.wrapper{
+    /* width: 1440px; */
+    position: relative;
+}
+
+/* top strat */
+.top{
+    width: 1440px;
+    height: 500px;
+    margin: 0 auto;
+    /* border: 5px solid red; */
+    background-image:url(../img/專車接送BG.png);
+    width: 100%;
+    height: 700px;
+    background-position: bottom,center;
+}
+.top img{
+    /* padding-bottom: 5px; */
+    /* border-bottom: 3px solid orange; */
+}
+
+a img{
+    float: left;
+    width: 150px;
+    margin: 20px;
+    margin-left: 150px;
+}
+
+.top a{
+    /* opacity: .8; */
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    text-shadow: 8px 8px 5px black;
+    /* border-bottom: 3px solid orange; */
+    
+}
+
+.top a:hover{
+
+}
+.top li{
+    margin-top: 50px;
+    margin-left: 55px;
+    display: block;
+    float: right;
+    float: left;
+    /* background-color: white; */
+    /* opacity: 0.8; */
+}
+/* top end */
+
+/* main strat */
+
+.main{
+    position: fixed;
+    display: block;
+    background-image: linear-gradient( 90deg , white 0%, #ADC4F0 60%);
+    right: 0;
+    top: 35%;
+    z-index: 100;
+    
+}
+.main ul{
+    width: 100px;
+    height: 330px;
+}
+
+.main ul li{
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding-bottom: 50px;
+    opacity: .8;
+}
+
+.main li h1{
+    font-size: 48px;
+    text-align: center;
+    color: red;
+}
+
+.main li h2{
+    font-size: 24px;
+    text-align: center;
+}
+.main li:nth-child(3){
+    text-align: center;
+}
+
+.main li:last-child a{
+    text-align: center;
+}
+.main li a button{ 
+    text-align: center;
+}
+/* main end */
+
+/* down start */
+.down{
+    margin: 20px auto;
+    width: 1200px;
+    height: 450px;
+    /* border: 2px solid black; */
+    background-color: #eeeeee;
+}
+
+
+.down h2{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 65px;
+}
+
+.down ul{
+    display: flex;
+}
+
+
+.down li:nth-child(1){
+    
+    width: 400px;
+    height: 250px;
+}
+
+.down li:nth-child(2){
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+
+
+
+/* down end */
+
+
+
+/* foot start */
+.footer{
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    background-color: black; 
+}
+
+.footer img{
+    width: 150px;
+    margin: 20px;
+    margin-left: 30px;
+    float: left;
+}
+
+.footer li{
+    display: block;
+    float: right;
+    float: left;
+}
+
+.footer  a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer p{
+    color: white;
+    float: right;
+    float: left;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 25px;
+}
