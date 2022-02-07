@@ -23,44 +23,60 @@ body{
     height: 500px;
     margin: 0 auto;
     /* border: 5px solid red; */
-    background-image: url(../img/24小時安親BG.png);
-    width: 100%;
+
+    background-image:url(../img/24小時安親BG.png);
+    /* width: 100%; */
     height: 700px;
     background-position: bottom,center;
+    display: flex
 }
 .top img{
-    /* padding-bottom: 5px; */
-    /* border-bottom: 3px solid orange; */
+    margin: 20px;
+    margin-left: 120px;
 }
 
 a img{
-    float: left;
     width: 150px;
-    margin: 20px;
-    margin-left: 150px;
 }
 
 .top a{
-    /* opacity: .8; */
     text-decoration: none;
     font-size: 28px;
+    height: 100px;
     color: white;
     text-shadow: 8px 8px 5px black;
-    /* border-bottom: 3px solid orange; */
+    
     
 }
 
 .top a:hover{
-    color: rgb(246, 0, 0);
+    /* color: rgb(246, 0, 0); */
 }
+
+.top ul{
+    display: flex;
+}
+
+.top nav{
+    background-image: linear-gradient(to bottom, #eeeeee 25%, rgba(255, 255, 255,0) 45%);
+    height: 100px;
+    flex-grow: 1;
+    display: flex;
+}
+
+
 .top li{
     margin-top: 50px;
     margin-left: 55px;
     display: block;
-    float: right;
-    float: left;
     /* background-color: white; */
     /* opacity: 0.8; */
+}
+
+
+.top li:hover{
+    background-color: #ebcfcf;
+    border-radius: 20%;
 }
 /* top end */
 
