@@ -170,17 +170,17 @@ a img{
 
 .down1 ul li {
     margin-top: 20px;
-    margin-left: 50px;
+    
 }
 
 .down1 tr {
     width: 800px;
-    border:  1px solid black;
+    border:  1px solid #eeeeee;
 }
 
 .down1 td{
-    padding-right: 50px;
-    border:  1px solid black;
+    padding: 25px  30px;
+    border:  1px solid #eeeeee;
 }
 tr:nth-child(even){
     background-color: gray;
