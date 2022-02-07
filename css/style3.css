@@ -51,7 +51,7 @@ a img{
 }
 
 .top a:hover{
-
+    color: rgb(246, 0, 0);
 }
 .top li{
     margin-top: 50px;
