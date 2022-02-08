@@ -57,7 +57,7 @@ a img{
 }
 
 .top nav{
-    background-image: linear-gradient(to bottom, #eeeeee 25%, rgba(255, 255, 255,0) 45%);
+    background-image: linear-gradient(to bottom, #eeeeee 35%, rgba(255, 255, 255,0) 95%);
     height: 100px;
     flex-grow: 1;
     display: flex;
