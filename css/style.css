@@ -136,7 +136,6 @@ a img{
 
 .down li{
     background-color: #eeeeee;
-    height: 700px;
     height: 466px;
     margin-top: 70px; 
 }
@@ -189,7 +188,7 @@ a img{
 }
 
 .down li:nth-child(3) img{
-    float: none;
+    float: none; 
     width: 390px;
     margin-left: 5px;
 }
