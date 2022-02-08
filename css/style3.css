@@ -75,8 +75,8 @@ a img{
 
 
 .top li:hover{
-    background-color: #ebcfcf;
-    border-radius: 20%;
+    background-color: #eeeeee;
+    border-radius: 50%;
 }
 /* top end */
 
@@ -85,7 +85,7 @@ a img{
 .main{
     position: fixed;
     display: block;
-    background-image: linear-gradient( 90deg , white 0%, #dfd7d7 60%);
+    background-image: linear-gradient( 270deg , #eeeeee 40%, rgba(255,255,255,0) 80%);
     right: 0;
     top: 35%;
     z-index: 100;
