@@ -131,18 +131,19 @@ a img{
 .down ul{
     margin: 40px auto;
     width: 1200px;
+    clear: both;
 }
 
 .down li{
     background-color: #eeeeee;
     height: 700px;
     height: 466px;
-    margin-top: 70px;   
+    margin-top: 70px; 
 }
 
-.down img{
-    width: 700px;
-    float: right;
+.down li img{
+    width: 58%;
+    display: inline-block;
 }
 .down li img{
     
