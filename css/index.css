@@ -135,13 +135,38 @@ a img{
 @media (max-width:576px){
     .top{
         width: 100%;
+        height: 1110px;
     }
     div.top ul{
         display: none;
     }
+    div.top a{
+        max-width: 100%;
+    }
 
     div.down ul{
         width: 100%;
+    }
+    div.down li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    div.down li > img{
+        width: 100%;
+    }
+
+    div.down li > h2{
+        width: 100%;
+        font-size: 48px;
+    }
+
+    div.down li:nth-child(3) > h2{
+        font-size: 48px;
+    }
+
+    div.main{
+        right: -20%;
     }
 
 }
@@ -200,8 +225,7 @@ a img{
 
 .down li:nth-child(3) h2{
     width: 100%;
-    padding-top: 10px ;
-    padding-bottom: 0px;
+    margin: 10px auto;
     font-size: 30px;
     text-align: center;
 }
