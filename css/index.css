@@ -11,15 +11,12 @@ body{
     /* margin-top: 25px; */
 }
 
-
-.wrapper{
-    width: 1440px;
-    
+img{
+    width: 100%;
 }
-
 /* top strat */
 .top{
-    width: 1440px;
+    width: 100%;
     height: 500px;
     margin: 0 auto;
     /* border: 5px solid red; */
@@ -129,23 +126,52 @@ a img{
 
 /* down start */
 .down ul{
-    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
     width: 1200px;
-    clear: both;
 }
+
+@media (max-width:576px){
+    .top{
+        width: 100%;
+    }
+    div.top ul{
+        display: none;
+    }
+
+    div.down ul{
+        width: 100%;
+    }
+
+}
+
+
+
+/* @media (min-width:992px) and (max-width:1199.98px) {
+    div.top{
+
+    }
+
+    div.down ul{
+        width: 700px;
+    }
+    div.down li h2{
+        margin: 50px auto;
+    }
+} */
 
 .down li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #eeeeee;
-    height: 466px;
-    margin-top: 70px; 
+    margin: 20px auto; 
 }
 
 .down li img{
-    width: 58%;
-    float: right;
-}
-.down li img{
-    
+    width: 700px;
+    order: 1;
 }
 
 
@@ -155,24 +181,16 @@ a img{
 } */
 
 .down li h2{
-    /* color: black; */
     color: black;
     font-size: 24px;
     text-align: center;
-}
-.down li:nth-child(1) h2{
-    margin: 150px 50px;
-    float: left;
-}
-
-.down li:nth-child(2) h2{
-    float: right;
     margin: 150px 50px;
     text-align: center;
 }
 
+
 .down li:nth-child(2) img{
-    float: left;
+    order: 0;
 }
 
 .down li:nth-child(3) li{
@@ -181,6 +199,7 @@ a img{
 }
 
 .down li:nth-child(3) h2{
+    width: 100%;
     padding-top: 10px ;
     padding-bottom: 0px;
     font-size: 30px;
