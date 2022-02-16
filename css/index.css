@@ -133,7 +133,11 @@ a img{
 }
 
 @media (max-width:576px){
-    .top{
+    div.wapper{
+        max-width: 100%;
+    }
+
+    div.top{
         width: 100%;
         height: 1110px;
     }
@@ -145,10 +149,10 @@ a img{
     }
 
     div.down ul{
-        width: 100%;
+        max-width: 100%;
     }
     div.down li{
-        width: 100%;
+        max-width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -157,11 +161,11 @@ a img{
     }
 
     div.down li > h2{
-        width: 100%;
+        max-width: 100%;
         font-size: 48px;
     }
 
-    div.down li:nth-child(3) > h2{
+    div.down li > h2:nth-child(3){
         font-size: 48px;
     }
 
