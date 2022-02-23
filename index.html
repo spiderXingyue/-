@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOC寵物旅館</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 
 <body>
     <div class="wapper">
-    <!-- top nav -->
-    
+        <!-- top nav -->
+
         <div class="top">
-            
+
             <nav>
                 <a href="index.html"><img src="img/LOGO1.png" alt=""></a>
                 <ul>
@@ -27,7 +29,7 @@
                 </ul>
             </nav>
         </div>
-    <!--top nav end-->
+        <!--top nav end-->
 
 
         <!-- 左邊的訂房資訊  start -->
@@ -54,9 +56,9 @@
                     <h2>專業<br><br>由專業的人士照顧寵物的一切<br>在午後時間有放風時間有專人照顧</h2>
                 </li>
                 <li>
-                    <img src="img/dogs1.png" alt="" >
+                    <img src="img/dogs1.png" alt="">
                     <h2>品質<br><br>整潔的環境可以讓毛孩運動玩樂<br>
-                    飲食有營養師調配讓毛孩吃得健康</h2>
+                        飲食有營養師調配讓毛孩吃得健康</h2>
                 </li>
                 <li>
                     <h2>店內生活照</h2>
@@ -66,9 +68,47 @@
                 </li>
             </ul>
         </div>
+        <!-- skick -->
+        <div class="slick-box">
+            <h2>每月最佳照片</h2>
+            <div class="slick">
+              <div>
+                <h3>1</h3>
+                <img src="https://via.placeholder.com/300x300" alt="">
+              </div>
+              <div>
+                <h3>2</h3>
+                <img src="https://via.placeholder.com/300x300" alt="">
+              </div>
+              <div>
+                <h3>3</h3>
+                <img src="https://via.placeholder.com/300x300" alt="">
+              </div>
+              <div>
+                <h3>4</h3>
+                <img src="https://via.placeholder.com/300x300" alt="">
+              </div>
+              <div>
+                <h3>5</h3>
+                <img src="https://via.placeholder.com/300x300" alt="">
+              </div>
+              <div>
+                <h3>6</h3>
+                <img src="https://via.placeholder.com/300x300" alt="">
+              </div>
+              <div>
+                <h3>7</h3>
+                <img src="https://via.placeholder.com/300x300" alt="">
+              </div>
+              <div>
+                <h3>8</h3>
+                <img src="https://via.placeholder.com/300x300" alt="">
+              </div>
+            </div>
+          </div>
         <!-- down end -->
         <div class="footer">
-            <img src="img/LOGO2.png" alt=""> 
+            <img src="img/LOGO2.png" alt="">
             <nav>
                 <ul>
                     <li><a href="about.html">關於我們</a></li>
@@ -85,6 +125,18 @@
             <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
         </div>
     </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script>
+        $('.slick').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3500,
+        });
+    </script>
 </body>
 
 </html>
