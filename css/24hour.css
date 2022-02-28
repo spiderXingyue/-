@@ -1,19 +1,14 @@
 @import url("reset.css");
 
 body{
-    width: 1440px;
-    height: 500px;
     margin: 0 auto;
     font-size: 16px;
     font-family: Arial;
     line-height: 1.6;
-    /* background-image: url(../img/pexels-pixmike-413195.jpg); */
-    /* margin-top: 25px; */
 }
 
 
 .wrapper{
-    /* width: 1440px; */
     position: relative;
 }
 
@@ -22,10 +17,7 @@ body{
     width: 1440px;
     height: 500px;
     margin: 0 auto;
-    /* border: 5px solid red; */
-
-    background-image:url(../img/24小時安親BG.png);
-    /* width: 100%; */
+    background-image:url(../img/24HR.png);
     height: 700px;
     background-position: bottom,center;
     display: flex
@@ -49,9 +41,7 @@ a img{
     
 }
 
-.top a:hover{
-    /* color: rgb(246, 0, 0); */
-}
+
 
 .top ul{
     display: flex;
@@ -69,15 +59,8 @@ a img{
     margin-top: 50px;
     margin-left: 55px;
     display: block;
-    /* background-color: white; */
-    /* opacity: 0.8; */
 }
 
-
-.top li:hover{
-    background-color: #eeeeee;
-    border-radius: 50%;
-}
 /* top end */
 
 /* main strat */
@@ -126,8 +109,412 @@ a img{
 }
 /* main end */
 
+nav .menu-btn{
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media screen and (max-width:576px){
+    
+    div.wapper{
+        max-width: 100%;
+    }
+    
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ .menu-btn ::before{
+        content: "\f00d";
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
 
 
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+    margin: 30px 0;
+    }
+
+    div.top a{
+        max-width: 100%;
+        display: block;
+    }
+
+    div.top nav a img{
+        margin-left: 20px;
+    }
+
+    div.down{
+        max-width: 100%;
+    }
+
+    div.down ul{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.down ul li{
+        height: 700px;
+        max-width: 100%;
+    }
+
+    div.down ul li img{
+        max-width: 100%;
+    }
+
+    div.down ul li h2{
+        padding-top: 0;
+
+    }
+
+    div.doon ul{
+        max-width: 100%;
+    }
+    
+
+    div.main{
+        right: -50%;
+    }
+
+    div.footer{
+        width: 100%;
+        height: 375px;
+    }
+}
+
+@media screen and (min-width: 575.98px) and (max-width:767.98px){
+    div.wapper{
+        max-width: 100%;
+    }
+    
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ .menu-btn ::before{
+        content: "\f00d";
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+    margin: 30px 0;
+    }
+
+    div.top a{
+        max-width: 100%;
+        display: block;
+    }
+
+    div.top nav a img{
+        margin-left: 20px;
+    }
+
+    div.down{
+        max-width: 100%;
+    }
+
+    div.down ul{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.down ul li{
+        height: 700px;
+        max-width: 100%;
+    }
+
+    div.down ul li img{
+        max-width: 100%;
+    }
+
+    div.down ul li h2{
+        padding-top: 0;
+
+    }
+
+    div.doon ul{
+        max-width: 100%;
+    }
+    
+
+    div.main{
+        right: -50%;
+    }
+
+    div.footer{
+        width: 100%;
+        height: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990.98px){
+div.wapper{
+        max-width: 100%;
+    }
+    
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ .menu-btn ::before{
+        content: "\f00d";
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+    margin: 30px 0;
+    }
+
+    div.top a{
+        max-width: 100%;
+        display: block;
+    }
+
+    div.top nav a img{
+        margin-left: 20px;
+    }
+
+    div.down{
+        max-width: 100%;
+    }
+
+    div.down ul{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.down ul li{
+        height: 700px;
+        max-width: 100%;
+    }
+
+    div.down ul li img{
+        max-width: 100%;
+    }
+
+    div.down ul li h2{
+        padding-top: 0;
+
+    }
+
+    div.doon ul{
+        max-width: 100%;
+
+    }
+    
+
+    div.main{
+        right: -50%;
+    }
+
+    div.footer{
+        width: 100%;
+        height: 375px;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199.98px){
+div.wapper{
+        max-width: 100%;
+    }
+    
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ .menu-btn ::before{
+        content: "\f00d";
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+    margin: 30px 0;
+    }
+
+    div.top a{
+        max-width: 100%;
+        display: block;
+    }
+
+    div.top nav a img{
+        margin-left: 20px;
+    }
+
+    div.down{
+        max-width: 100%;
+    }
+
+    div.down ul{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.down ul li{
+        height: 700px;
+        max-width: 100%;
+    }
+
+    div.down ul li img{
+        max-width: 100%;
+    }
+
+    div.down ul li h2{
+        padding-top: 0;
+
+    }
+
+    div.doon ul{
+        max-width: 100%;
+    }
+    
+
+    div.main{
+        right: -50%;
+    }
+
+    div.footer{
+        width: 100%;
+        height: 175px;
+    }
+}
+
+.back-to-top {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: 1px solid #5cb85c; 
+    outline: none; 
+    background-color: #fff; 
+    color: #5cb85c; 
+    cursor: pointer; 
+    padding: 10px 15px 15px 15px; 
+    border-radius: 10px; 
+  }
+  
+  .back-to-top:hover {
+    background-color: #5cb85c; 
+    color: #fff;
+  }
 
 /* down start */
 .down ul{
@@ -145,9 +532,6 @@ a img{
 .down img{
     width: 700px;
     float: right;
-}
-.down li img{
-    
 }
 
 .down li h2{

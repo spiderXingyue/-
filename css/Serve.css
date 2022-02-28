@@ -1,38 +1,31 @@
 @import url("reset.css");
 
 body{
-    width: 1440px;
-    height: 500px;
+    
     margin: 0 auto;
     font-size: 16px;
     font-family: Arial;
     line-height: 1.6;
-    /* background-image: url(../img/pexels-pixmike-413195.jpg); */
-    /* margin-top: 25px; */
 }
 
 
 .wrapper{
-    /* width: 1440px; */
     position: relative;
 }
 
 /* top strat */
 .top{
-    width: 1440px;
-    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
     margin: 0 auto;
-    /* border: 5px solid red; */
-
-    background-image:url(../img/服務BG.png);
-    /* width: 100%; */
+    background-image:url(../img/severBG.png);
     height: 700px;
-    background-position: bottom,center;
+    background-position: bottom,right;
     display: flex
 }
 .top img{
     margin: 20px;
-    margin-left: 120px;
+
 }
 
 a img{
@@ -62,6 +55,7 @@ a img{
     height: 100px;
     flex-grow: 1;
     display: flex;
+    justify-content: space-around;
 }
 
 
@@ -74,10 +68,6 @@ a img{
 }
 
 
-.top li:hover{
-    background-color: #ebcfcf;
-    border-radius: 50%;
-}
 /* top end */
 
 /* main strat */
@@ -126,6 +116,304 @@ a img{
 }
 /* main end */
 
+#click{
+    display: none;
+}
+
+nav .menu-btn{
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:576px){
+
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ .menu-btn ::before{
+        content: "\f00d";
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+    margin: 30px 0;
+    }
+
+    div.top a{
+        max-width: 100%;
+        display: block;
+    }
+
+
+    div.down ul{
+        max-width: 100%;
+        height: 850px;
+    }
+
+    div.down ul li{
+        height: 850px;
+    }
+
+    div.down1 ul{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.down1 ul li h2{
+        margin-left: 200px ;
+    }
+
+    div.down1 ul li .downleft{
+        float: none;
+        margin-right: 0;
+        margin-left: 22px;
+    }
+
+    div.down1 ul li .downright{
+        margin-left: 22px;
+    }
+
+
+    div.main{
+        right: -50%;
+    }
+
+    div.footer{
+        width: 100%;
+        height: 375px;
+    }
+}
+
+@media screen and (min-width: 575.98px) and (max-width:767.98px){
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ .menu-btn ::before{
+        content: "\f00d";
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+    margin: 30px 0;
+    }
+
+    div.top a{
+        max-width: 100%;
+        display: block;
+    }
+
+
+    div.down ul{
+        max-width: 100%;
+        height: 850px;
+    }
+
+    div.down ul li{
+        height: 850px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.down ul li h2{
+        padding-top: 0;
+        width: 100%;
+    }
+
+    div.down ul li img{
+        width: 100%;
+    }
+
+    div.down1 ul{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.down1 ul li h2{
+        margin-left: 200px ;
+    }
+
+    div.down1 ul li .downleft{
+        float: none;
+        margin-right: 0;
+        margin-left: 22px;
+    }
+
+    div.down1 ul li .downright{
+        margin-left: 22px;
+    }
+
+
+    div.main{
+        right: -50%;
+    }
+
+    div.footer{
+        width: 100%;
+        height: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990.98px){
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ .menu-btn ::before{
+        content: "\f00d";
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+    margin: 30px 0;
+    }
+
+    div.top a{
+        max-width: 100%;
+        display: block;
+    }
+
+
+    div.down ul{
+        max-width: 100%;
+        height: 850px;
+    }
+
+    div.down ul li{
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    div.down ul li h2{
+        padding-top: 0;
+        width: 100%;
+    }
+
+    div.down ul li img{
+        /* width: 700px; */
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    div.down1 ul{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    div.down1 ul li h2{
+        width: 100% ;
+    }
+
+    div.down1 ul li .downleft{
+        float: none;
+        margin: 0 auto;
+    }
+
+    div.down1 ul li .downright{
+        margin: 0 auto;
+    }
+
+
+    div.main{
+        right: -50%;
+    }
+
+    div.footer{
+        width: 100%;
+        height: 375px;
+    }
+}
 
 /* down start */
 .down ul{
@@ -215,6 +503,27 @@ tr:nth-child(even){
 }
 
 /* down end */
+
+
+.back-to-top {
+    display: none; /* 默认是隐藏的，这样在第一屏才不显示 */
+    position: fixed; /* 位置是固定的 */
+    bottom: 20px; /* 显示在页面底部 */
+    right: 30px; /* 显示在页面的右边 */
+    z-index: 99; /* 确保不被其他功能覆盖 */
+    border: 1px solid #5cb85c; /* 显示边框 */
+    outline: none; /* 不显示外框 */
+    background-color: #fff; /* 设置背景背景颜色 */
+    color: #5cb85c; /* 设置文本颜色 */
+    cursor: pointer; /* 鼠标移到按钮上显示手型 */
+    padding: 10px 15px 15px 15px; /* 增加一些内边距 */
+    border-radius: 10px; /* 增加圆角 */
+  }
+  
+  .back-to-top:hover {
+    background-color: #5cb85c; /* 鼠标移上去时，反转颜色 */
+    color: #fff;
+  }
 
 /* foot start */
 .footer{

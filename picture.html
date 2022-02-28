@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOC寵物旅館</title>
     <link rel="stylesheet" href="css/picture.css">
+    <link rel="stylesheet" href="./hamburgers/hamburgers.scss">
+    <script src="https://kit.fontawesome.com/d0ebbbc862.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,6 +18,10 @@
             
             <nav>
                 <a href="index.html"><img src="img/LOGO1.png" alt=""></a>
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <ul>
                     <li><a href="about.html">關於我們</a></li>
                     <li><a href="Serve.html">服務內容</a></li>
@@ -28,6 +34,7 @@
         </div>
         <!--top nav end-->
 
+        <button class="js-back-to-top back-to-top" title="回到头部">︽</button>
 
         <!-- 左邊訂房資訊 start -->
         <div class="main">
@@ -49,31 +56,31 @@
         </div>
 
         <div class="down">
-            <img src="img/最新照片貓.png" alt="">
+            <img src="img/newbigcat.png" alt="">
             <ul>
-                <li><img src="img/狗狗.png" alt=""></li>
-                <li><img src="img/貓貓.png" alt=""></li>
-                <li><img src="img/狗狗狗.png" alt=""></li>
-                <li><img src="img/貓貓貓.png" alt=""></li>
+                <li><img src="img/dogdog.png" alt=""></li>
+                <li><img src="img/catcat.png" alt=""></li>
+                <li><img src="img/dog3.png" alt=""></li>
+                <li><img src="img/cat3.png" alt=""></li>
             </ul>
         </div>
 
         <div class="down2">
             <ul>
-                <li><img src="img/最新狗300.png" alt=""></li>
-                <li><img src="img/最新貓貓300.png" alt=""></li>
-                <li><img src="img/最新狗狗300.png" alt=""></li>
+                <li><img src="./img/newdog300.png" alt=""></li>
+                <li><img src="img/newdog2_300.png" alt=""></li>
+                <li><img src="img/newcat300.png" alt=""></li>
             </ul>
         </div>
 
         <div class="down3">
             <ul>
-                <li><img src="img/幼犬300.png" alt=""></li>
-                <li><img src="img/狗狗頭300.png" alt=""></li>
-                <li><img src="img/貓300.png" alt=""></li>
-                <li><img src="img/最新貓貓300.png" alt=""></li>
-                <li><img src="img/最新狗狗300.png" alt=""></li>
-                <li><img src="img/狗頭300px.png" alt=""></li>
+                <li><img src="img/down3_300.png" alt=""></li>
+                <li><img src="img/down3_dog.png" alt=""></li>
+                <li><img src="img/down3_cat.png" alt=""></li>
+                <li><img src="img/down3_300.png" alt=""></li>
+                <li><img src="img/down3_dog.png" alt=""></li>
+                <li><img src="img/down3_300.png" alt=""></li>
             </ul>
         </div>
 
@@ -83,11 +90,11 @@
             <nav>
                 <ul>
                     <li><a href="about.html">關於我們</a></li>
-                    <li><a href="服務項目.html">服務內容</a></li>
-                    <li><a href="24hr安親.html">24hr安親</a></li>
-                    <li><a href="門市資訊.html">門市資訊</a></li>
-                    <li><a href="最新照片.html">最新照片</a></li>
-                    <li><a href="專車接送.html">專車接送</a></li>
+                    <li><a href="Serve.html">服務內容</a></li>
+                    <li><a href="/24hr.html">24hr安親</a></li>
+                    <li><a href="/store.html">門市資訊</a></li>
+                    <li><a href="/picture.html">最新照片</a></li>
+                    <li><a href="/specialcar.html">專車接送</a></li>
                 </ul>
             </nav>
             <p>店面地址:台北市大安區新生南路二段60-1號</p><br>
@@ -98,6 +105,29 @@
     </div>
 
     <!-- footer end -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script>
+        $(function () {
+            var $win = $(window);
+            var $backToTop = $('.js-back-to-top');
+            
+            $win.scroll(function () {
+                if ($win.scrollTop() > 100) {
+                    $backToTop.show();
+                } else {
+                    $backToTop.hide();
+                }
+            });
+            
+            $backToTop.click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 200);
+            });
+        });
+    </script>
 </body>
 
 </html>

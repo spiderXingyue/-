@@ -7,15 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOC寵物旅館</title>
     <link rel="stylesheet" href="css/about.css">
+    <script src="https://kit.fontawesome.com/d0ebbbc862.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- top nav -->
     <div class="wrapper">
         <div class="top">
-            
+
             <nav>
                 <a href="index.html"><img src="img/LOGO1.png" alt=""></a>
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <ul>
                     <li><a href="about.html">關於我們</a></li>
                     <li><a href="Serve.html">服務內容</a></li>
@@ -26,7 +31,7 @@
                 </ul>
             </nav>
         </div>
-    <!--top nav end-->
+        <!--top nav end-->
 
 
         <!-- 左邊訂房資訊 start -->
@@ -44,18 +49,18 @@
             </ul>
         </div>
         <!-- main end -->
-        
+
         <!-- down -->
         <div class="down">
             <ul>
                 <li>
                     <h2>關於我們</h2>
                     <p>在您不在的時候或者是您沒有空<br>我們可以幫您照顧您的毛孩<br>擁有營養健康的飲食<br>與可以運動玩樂的後院</p>
-                    <img src="img/貓狗.png" alt="">
+                    <img src="img/dogcat.png" alt="">
                 </li>
-                    <li><img src="./img/bg4mini.png" alt=""></li>
+                <li><img src="./img/bg4mini.png" alt="" class="imgright"></li>
             </ul>
-             
+
         </div>
         <!-- down end -->
         <div class="down2">
@@ -65,17 +70,19 @@
             <img src="img/pexels-mithul-varshan-2409503.jpg.png" alt="">
         </div>
 
+        <button class="js-back-to-top back-to-top" title="回到头部">︽</button>
+
         <!-- footer start -->
         <div class="footer">
-            <img src="img/LOGO2.png" alt=""> 
+            <img src="img/LOGO2.png" alt="">
             <nav>
                 <ul>
                     <li><a href="about.html">關於我們</a></li>
-                    <li><a href="服務項目.html">服務內容</a></li>
-                    <li><a href="24hr安親.html">24hr安親</a></li>
-                    <li><a href="門市資訊.html">門市資訊</a></li>
-                    <li><a href="最新照片.html">最新照片</a></li>
-                    <li><a href="專車接送.html">專車接送</a></li>
+                    <li><a href="Serve.html">服務內容</a></li>
+                    <li><a href="/24hr.html">24hr安親</a></li>
+                    <li><a href="/store.html">門市資訊</a></li>
+                    <li><a href="/picture.html">最新照片</a></li>
+                    <li><a href="/specialcar.html">專車接送</a></li>
                 </ul>
             </nav>
             <p>店面地址:台北市大安區新生南路二段60-1號</p><br>
@@ -85,7 +92,28 @@
         </div>
     </div>
 
-     <!-- footer end -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script>
+        $(function () {
+            var $win = $(window);
+            var $backToTop = $('.js-back-to-top');
+            $win.scroll(function () {
+                if ($win.scrollTop() > 100) {
+                    $backToTop.show();
+                } else {
+                    $backToTop.hide();
+                }
+            });
+            $backToTop.click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 200);
+            });
+        });
+    </script>
+
+
+    <!-- footer end -->
 </body>
 
 </html>
