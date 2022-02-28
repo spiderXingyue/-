@@ -7,15 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOC寵物旅館</title>
     <link rel="stylesheet" href="css/Serve.css">
+    <link rel="stylesheet" href="./hamburgers/hamburgers.scss">
+    <script src="https://kit.fontawesome.com/d0ebbbc862.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- top nav -->
     <div class="wrapper">
         <div class="top">
-            
+
             <nav>
                 <a href="index.html"><img src="img/LOGO1.png" alt=""></a>
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <ul>
                     <li><a href="about.html">關於我們</a></li>
                     <li><a href="Serve.html">服務內容</a></li>
@@ -49,7 +55,7 @@
         <div class="down">
             <ul>
                 <li>
-                    <img src="img/pexels-muhannad-alatawi-58997.jpg" alt="">
+                    <img src="./img/dogs.png" alt="">
                     <h2>服務內容</h2>
                     <h2>本店目前擁有24小時安親.<br>寵物洗澡.寵物住宿以及<br>寵物剪髮以上服務<br>以及24小時的店內攝影<br>可以讓毛孩的主人可以觀看<br>毛孩的目前的狀況</h2>
                 </li>
@@ -117,21 +123,24 @@
                             <td>499</td>
                         </tr>
                     </table>
-                    
+
                 </li>
             </ul>
         </div>
+
+        <button class="js-back-to-top back-to-top" title="回到头部">︽</button>
+
         <!-- down end -->
         <div class="footer">
             <img src="img/LOGO2.png" alt="">
             <nav>
                 <ul>
                     <li><a href="about.html">關於我們</a></li>
-                    <li><a href="服務項目.html">服務內容</a></li>
-                    <li><a href="24hr安親.html">24hr安親</a></li>
-                    <li><a href="門市資訊.html">門市資訊</a></li>
-                    <li><a href="最新照片.html">最新照片</a></li>
-                    <li><a href="專車接送.html">專車接送</a></li>
+                    <li><a href="Serve.html">服務內容</a></li>
+                    <li><a href="/24hr.html">24hr安親</a></li>
+                    <li><a href="/store.html">門市資訊</a></li>
+                    <li><a href="/picture.html">最新照片</a></li>
+                    <li><a href="/specialcar.html">專車接送</a></li>
                 </ul>
             </nav>
             <p>店面地址:台北市大安區新生南路二段60-1號</p><br>
@@ -140,6 +149,27 @@
             <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
         </div>
     </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script>
+        $(function () {
+            var $win = $(window);
+            var $backToTop = $('.js-back-to-top');
+            $win.scroll(function () {
+                if ($win.scrollTop() > 100) {
+                    $backToTop.show();
+                } else {
+                    $backToTop.hide();
+                }
+            });
+            $backToTop.click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 200);
+            });
+        });
+    </script>
 </body>
 
 </html>

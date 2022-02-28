@@ -1,37 +1,35 @@
 @import url("reset.css");
 
 body{
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     font-size: 16px;
     font-family: Arial;
     line-height: 1.6;
-    /* background-image: url(../img/pexels-pixmike-413195.jpg); */
-    /* margin-top: 25px; */
+    
 }
-
 
 .wrapper{
-    /* width: 1440px; */
-    position: relative;
+    max-width: 100%;
 }
+
 
 /* top strat */
 .top{
-    width: 1440px;
+    width: 100%;
+    background-repeat: no-repeat;
     height: 500px;
     margin: 0 auto;
-    /* border: 5px solid red; */
+    
 
-    background-image:url(../img/狗窩.png);
+    background-image:url(../img/aboutBG.png);
     /* width: 100%; */
     height: 700px;
-    background-position: bottom,center;
+    background-position: center,center;
     display: flex
 }
 .top img{
     margin: 20px;
-    margin-left: 120px;
 }
 
 a img{
@@ -48,10 +46,6 @@ a img{
     
 }
 
-.top a:hover{
-    /* color: rgb(246, 0, 0); */
-}
-
 .top ul{
     display: flex;
 }
@@ -61,6 +55,7 @@ a img{
     height: 100px;
     flex-grow: 1;
     display: flex;
+    justify-content: space-around;
 }
 
 
@@ -68,15 +63,465 @@ a img{
     margin-top: 50px;
     margin-left: 55px;
     display: block;
-    /* background-color: white; */
-    /* opacity: 0.8; */
 }
 
 
-.top li:hover{
-    background-color: #eeeeee;
-    border-radius: 50%;
+nav .menu-btn{
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
 }
+
+#click{
+    display: none;
+}
+@media screen and (max-width:576px){
+    
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+        margin: 30px 0;
+        }
+
+        div.top a{
+            max-width: 100%;
+            display: block;
+        }
+
+        div.down{
+            max-width: 100%;
+        }
+
+        div.down ul{
+            max-width: 100%;
+            height: 480px;
+        }
+
+        div.down li{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        div.down li:first-child {
+            height: 470px;
+        }
+
+        div.down li:first-child img{
+            margin-left: 100px;
+        }
+
+        div.down li img{
+            max-width: 100%;
+        }
+
+        div.down li h2{
+            margin-bottom: 20px ;
+            margin-top: 10px;
+        }
+
+        div.down li p{
+            margin-bottom: 20px;
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        div.footer{
+            width: 100%;
+            height: 375px;
+        }
+
+        div.down2{
+            width: 100%;
+        }
+        
+        div ul li{
+            flex-wrap: wrap;
+        }
+
+        div ul li .imgright{
+            display: none;
+        }
+
+        div.main{
+            right: -50%;
+        }
+        
+        div.down2{
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        div.down2 h2{
+            width: 100%;
+        }
+        
+        div.down li img{
+            margin: 0 0;
+        }
+
+        div.down2 img{
+            margin: 10px 0;
+        }
+}
+
+@media screen and (min-width: 575.98px) and (max-width:767.98px){
+
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+        margin: 30px 0;
+        }
+
+        div.top a{
+            max-width: 100%;
+            display: block;
+        }
+
+        div.down{
+            max-width: 100%;
+        }
+
+        div.down ul{
+            max-width: 100%;
+            height: 520px;
+        }
+
+        div.down li{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        div.down li:first-child {
+            height: 470px;
+        }
+
+        div.down li:nth-child(2){
+            display: none;
+        }
+
+        div.down li:first-child img{
+            margin-left: 330px;
+        }
+
+        div.down li img{
+            max-width: 100%;
+        }
+
+        div.down li h2{
+            text-align: center;
+        }
+
+        div.down li p{
+            margin-bottom: 20px;
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        div.down2{
+            width: 100%;
+        }
+        
+        div ul li{
+            flex-wrap: wrap;
+        }
+
+        div ul li .imgright{
+            display: none;
+        }
+
+        div.main{
+            right: -20%;
+        }
+        
+        div.down2{
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        div.down2 h2{
+            width: 100%;
+        }
+        
+        div.down li img{
+            margin: 0 0;
+        }
+
+        div.down2 img{
+            margin: 10px 0;
+        }
+
+        div.main{
+            right: -20%;
+        }
+
+        div.footer{
+            width: 100%;
+            height: 375px;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990.98px){
+
+    div .menu-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    div.top nav{
+        justify-content: normal;
+    }
+
+    div.top{
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    div.top ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    div.top ul li{
+        margin: 30px 0;
+        }
+
+        div.top a{
+            max-width: 100%;
+            display: block;
+        }
+
+        div.down{
+            max-width: 100%;
+        }
+
+        div.down ul{
+            max-width: 100%;
+            height: 520px;
+            flex-wrap: nowrap;
+        }
+
+        div.down li{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        div.down li:first-child {
+            height: 470px;
+        }
+
+        div.down li:nth-child(2){
+            display: block;
+        }
+
+        div.down li:first-child img{
+            margin-left: 50px;
+        }
+
+        div.down li img{
+            max-width: 100%;
+        }
+
+        div.down li .imgright{
+            width: 460px;
+        }
+
+        div.down li h2{
+            text-align: center;
+            margin-top: 22px;
+            margin-left: 28px;
+        }
+
+        div.down li p{
+            margin-bottom: 20px;
+            margin-top: 0px;
+            text-align: center;
+            margin-left:  30px;
+        }
+
+
+
+        div.down2{
+            width: 100%;
+        }
+        
+        div ul li{
+            flex-wrap: wrap;
+        }
+
+        div ul li .imgright{
+            /* display: none; */
+        }
+
+        div.main{
+            right: -50%;
+        }
+        
+        div.down2{
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        div.down2 h2{
+            width: 100%;
+        }
+        
+        div.down li img{
+            margin: 0 0;
+        }
+
+        div.down2 img{
+            margin: 10px 0;
+        }
+
+        div.main{
+            right: -20%;
+        }
+
+        div.footer{
+            width: 100%;
+            height: 230px;
+        }
+
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199.98px){
+    div.down ul{
+        max-width: 100%;
+    }
+
+    div.main{
+        right: -50%;
+    }
+
+    div.footer{
+        width: 100%;
+        height: 230px;
+    }
+
+    div.down{
+        max-width: 100%;
+    }
+
+    div.down p{
+        margin-bottom: 21px;
+    }
+
+    div.down h2{
+        margin-top: 36px;
+    }
+
+    div.down li:nth-child(1){
+        height: 0;
+    }
+    div.doww li:nth-child(2){
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    div.down ul li .imgright{
+        width: 444px;
+        margin-left: 390px;
+        margin-top: 48px;
+    }
+
+    div.down2{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.down2 h2{
+        width: 100%;
+    }
+
+    div.down2 img{
+        margin-left: 70px;
+    }
+}
+
 /* top end */
 
 /* main strat */
@@ -148,7 +593,9 @@ a img{
 
 .down ul{
     display: flex;
+    flex-wrap:wrap;
 }
+
 
 .down li:first-child img{
     margin-left: 20px;
@@ -192,9 +639,38 @@ a img{
     margin-left: 100px;
 }
 
-
-
 /* down end */
+
+.back-to-top {
+    display: none; /* 默认是隐藏的，这样在第一屏才不显示 */
+    position: fixed; /* 位置是固定的 */
+    bottom: 20px; /* 显示在页面底部 */
+    right: 30px; /* 显示在页面的右边 */
+    z-index: 99; /* 确保不被其他功能覆盖 */
+    border: 1px solid #5cb85c; /* 显示边框 */
+    outline: none; /* 不显示外框 */
+    background-color: #fff; /* 设置背景背景颜色 */
+    color: #5cb85c; /* 设置文本颜色 */
+    cursor: pointer; /* 鼠标移到按钮上显示手型 */
+    padding: 10px 15px 15px 15px; /* 增加一些内边距 */
+    border-radius: 10px; /* 增加圆角 */
+  }
+  
+  .back-to-top:hover {
+    background-color: #5cb85c; /* 鼠标移上去时，反转颜色 */
+    color: #fff;
+  }
+
+
+
+  
+  .back-to-top:hover {
+    background-color: #5cb85c; 
+    color: #fff;
+  }
+
+
+
 
 /* foot start */
 .footer{
