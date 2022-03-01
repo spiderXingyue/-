@@ -17,8 +17,8 @@ body{
 
 /* top strat */
 .top{
-    width: 1440px;
-    height: 500px;
+    width: 100%;
+
     margin: 0 auto;
     background-image:url(../img/pictureBG.png);
     height: 700px;
@@ -173,12 +173,13 @@ nav .menu-btn{
     }
 
     div.top ul li{
-    margin: 30px 0;
+    margin: 0 0;
     }
 
     div.top a{
         max-width: 100%;
         display: block;
+        height: 60px;
     }
 
     div.down{
@@ -290,12 +291,13 @@ nav .menu-btn{
     }
 
     div.top ul li{
-    margin: 30px 0;
+    margin: 0px 0;
     }
 
     div.top a{
         max-width: 100%;
         display: block;
+        height: 60px;
     }
 
     div.down{
