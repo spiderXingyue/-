@@ -384,6 +384,10 @@ nav .menu-btn{
   }
   
 
+  .slick-box h2{
+    font-size: 30px;
+  }
+
     .down li{
     display: flex;
     flex-wrap: wrap;
